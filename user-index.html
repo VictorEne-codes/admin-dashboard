@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanakku - Bootstrap Admin HTML Template</title>
+
+<link rel="shortcut icon" href="assets/img/favicon.png">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+<link rel="stylesheet" href="assets/plugins/feather/feather.css">
+
+<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+<link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="assets/js/layout.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    
+    <div class="header header-one">
+        <a href="index.html" class="d-inline-flex d-sm-inline-flex align-items-center d-md-inline-flex d-lg-none align-items-center device-logo">
+        </a>
+        <div class="main-logo d-inline float-start d-lg-flex align-items-center d-none d-sm-none d-md-none">
+        <div class="logo-white">
+        </div>
+        <div class="logo-color">
+        <a href="index.html">
+        <img src="assets/img/logo.png" class="img-fluid logo-blue" alt="Logo">
+        </a>
+        </div>
+        </div>
+        
+        
+        
+        
+        <a class="mobile_btn" id="mobile_btn">
+        <i class="fas fa-bars"></i>
+        </a>
+        
+        
+        <ul class="nav nav-tabs user-menu">
+        
+        <li class="nav-item dropdown has-arrow flag-nav">
+        
+        
+        <li class="nav-item dropdown  flag-nav dropdown-heads">
+        </a>
+        
+        <li class="nav-item dropdown">
+        <a href="javascript:void(0)" class="user-link  nav-link" data-bs-toggle="dropdown">
+        <span class="user-img">
+        <i style="font-size: 30px;" class="fe fe-user"></i>
+        <!-- <span class="animate-circle"></span> -->
+        </span>
+        <span class="user-content">
+        <span class="user-details">Welcome</span>
+        <span class="user-name">Victor</span>
+        </span>
+        </a>
+        <div class="dropdown-menu menu-drop-user">
+        <div class="profilemenu">
+        <div class="subscription-menu">
+        <ul>
+        <li>
+        <a class="dropdown-item" href="settings.html">Settings</a>
+        </li>
+        </ul>
+        </div>
+        <div class="subscription-logout">
+        <ul>
+        <li class="pb-0">
+        <a class="dropdown-item" href="user-login.html">Log Out</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </li>
+        
+        </ul>
+        
+        </div>
+        <!-- Side Navigation bar begins here -->
+        
+        <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+        <div id="sidebar-menu" class="sidebar-menu">
+        
+        <ul class="sidebar-vertical">
+        <li><a href="user-index.html"><i class="fe fe-home"></i> <span> Home</span></a></li>
+        </li>
+        
+        
+        <li>
+            <a href="user-recharge.html"><i class="fe fe-plus"></i> <span>Recharge</span></a>
+        </li>
+        <li>
+            <a href="user-top-up.html"><i class="fe fe-plus-circle"></i> <span>Top-up</span></a>
+        </li>
+        <li>
+            <a href="user-payment.html"><i class="fe fe-plus-circle"></i> <span>Payments</span></a>
+        </li>
+        <li>
+            <a href="user-consumption.html"><i class="fe fe-plus-circle"></i> <span>Consumptions</span></a>
+        </li>
+        <li>
+            <a href="user-report-error.html"><i class="fe fe-x-circle"></i> <span>Report Error</span></a>
+        </li>
+        <li>
+            <a href="user-settings.html"><i class="fe fe-settings"></i> <span>Settings</span></a>
+        </li>
+        <li>
+            <a href="user-login.html"><i class="fe fe-power"></i> <span>Logout</span></a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <!-- Side Navigation bar ends here -->
+
+        
+<div class="page-wrapper">
+<div class="content container-fluid pb-0">
+
+<div class="page-header">
+<div class="content-page-header">
+<h5>Your Dashboard</h5>
+</div>
+</div>
+
+<div class="super-admin-dashboard">
+<div class="row">
+<div class="col-xl-5 d-flex">
+<div class="dash-user-card w-100">
+<h4><i class="fe fe-sun"></i>Hello, Victor</h4>
+<p>You have used 147/220 tokens today</p>
+<div class="dash-btns">
+<a href="user-recharge.html" class="btn view-company-btn">Recharge</a>
+<a href="user-top-up.html" class="btn view-package-btn">Top-up</a>
+</div>
+<div class="dash-img">
+<img src="assets/img/dashboard-card-img.png" alt>
+</div>
+</div>
+</div>
+<div class="col-xl-7 d-flex p-0">
+<div class="row dash-company-row w-100 m-0">
+<div class="col-lg-3 col-sm-6 d-flex">
+<div class="company-detail-card w-100">
+<div class="company-icon">
+<img src="assets/img/icons/dash-card-icon-01.svg" alt>
+</div>
+<div class="dash-comapny-info">
+<h6>Total Tokens Purchased</h6>
+<h5>220</h5>
+<!-- <p><span>14% <i class="fe fe-chevrons-up"></i></span>Last month</p> -->
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 d-flex">
+<div class="company-detail-card bg-info-light w-100">
+<div class="company-icon">
+<img src="assets/img/icons/dash-card-icon-02.svg" alt>
+</div>
+<div class="dash-comapny-info">
+<h6>Total Consumption</h6>
+<h5>147</h5>
+<!-- <p><span>1% <i class="fe fe-chevrons-up"></i></span>Last month</p> -->
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 d-flex">
+<div class="company-detail-card bg-pink-light w-100">
+<div class="company-icon">
+<img src="assets/img/icons/dash-card-icon-03.svg" alt>
+</div>
+<div class="dash-comapny-info">
+<h6>Remaining Tokens</h6>
+<h5>73</h5>
+<!-- <p><span>2% <i class="fe fe-chevrons-up"></i></span>Last month</p> -->
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 d-flex">
+<div class="company-detail-card bg-success-light w-100">
+<div class="company-icon">
+<img src="assets/img/icons/dash-card-icon-04.svg" alt>
+</div>
+<div class="dash-comapny-info">
+<h6>Last Purchase Date</h6>
+<h5>22/04</h5>
+<!-- <p><span>6% <i class="fe fe-chevrons-up"></i></span>Last month</p> -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-5 d-flex">
+<div class="card super-admin-dash-card">
+<div class="card-header">
+<div class="row align-center">
+<div class="col">
+<h5 class="card-title">Recent Payments</h5>
+</div>
+<div class="col-auto">
+<a href="user-payment.html" class="btn-right btn btn-sm btn-outline-primary">
+View All
+</a>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<div class="table-responsive">
+<table class="table table-stripped table-hover">
+<tbody>
+<tr>
+<td style="font-weight: bolder; font-size: 17px; padding-right: 50px;">Recharge</td>
+<td style="padding-right: 50px;">60 Tokens</td>
+<td>24 Feb 2024</td>
+<!-- <td class="text-end"><a href="companies.html" class="view-companies btn">View</a></td> -->
+</tr>
+<tr>
+    <td style="font-weight: bolder; font-size: 17px;">Top up</td>
+    <td>10 Tokens</td>
+    <td>24 Feb 2024</td>
+</tr>
+<tr>
+    <td style="font-weight: bolder; font-size: 17px;">Recharge</td>
+    <td>60 Tokens</td>
+    <td>24 Feb 2024</td>
+</tr>
+<tr>
+    <td style="font-weight: bolder; font-size: 17px;">Top-up</td>
+    <td>20 Tokens</td>
+    <td>24 Feb 2024</td>
+</tr>
+<tr>
+    <td style="font-weight: bolder; font-size: 17px;">Recharge</td>
+    <td>60 Tokens</td>
+    <td>24 Feb 2024</td>
+</tr>
+<tr>
+    <td style="font-weight: bolder; font-size: 17px;">Top-up</td>
+    <td>5 Tokens</td>
+    <td>24 Feb 2024</td>
+</tr>
+<tr>
+    <td style="font-weight: bolder; font-size: 17px;">Recharge</td>
+    <td>60 Tokens</td>
+    <td>24 Feb 2024</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-7 d-flex">
+<div class="card super-admin-dash-card">
+<div class="card-header">
+<div class="d-flex justify-content-between align-items-center">
+<h5 class="card-title">Total Consumption </h5>
+<div class="d-flex align-center">
+<span class="earning-income-text"><i></i>Consumption</span>
+<div class="dropdown main">
+<button class="btn btn-white btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+2024
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+<li>
+<a href="javascript:void(0);" class="dropdown-item">2025</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="dropdown-item">2026</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="dropdown-item">2027</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<div id="earnings-chart"></div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 d-flex">
+<div class="card super-admin-dash-card flex-fill">
+<div class="card-header">
+<div class="d-flex justify-content-between align-items-center">
+<h5 class="card-title">Most Consumption</h5>
+<div class="dropdown main">
+<button class="btn btn-white btn-sm dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+This Month
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+<li>
+<a href="javascript:void(0);" class="dropdown-item">Today</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="dropdown-item">This Week</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="dropdown-item">This Year</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<div class="dash-plane-list">
+<div class="plane-info">
+<span class="icon-plane"><img src="assets/img/icons/dashboard-plane-icon.svg" alt></span>
+<div class="plane-name">AC 1.2v <h6>Total Used : 20.41</h6></div>
+</div>
+<span class="plane-rate">$549.00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 d-flex">
+<div class="card super-admin-dash-card flex-fill">
+<div class="card-header">
+<div class="d-flex justify-content-between align-items-center">
+<h5 class="card-title">Least Consumption</h5>
+<div class="dropdown main">
+<button class="btn btn-white btn-sm dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+Today
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+<li>
+<a href="javascript:void(0);" class="dropdown-item">This Month</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="dropdown-item">This Week</a>
+</li>
+<li>
+<a href="javascript:void(0);" class="dropdown-item">This Year</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+    <div class="dash-plane-list">
+    <div class="plane-info">
+    <span class="icon-plane"><img src="assets/img/icons/dashboard-plane-icon.svg" alt></span>
+    <div class="plane-name">Room Lamps <h6>Total Used : 2.11</h6></div>
+    </div>
+    <span class="plane-rate">$59.00</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 d-flex">
+<div class="card super-admin-dash-card">
+<div class="card-header">
+<div class="row align-center">
+<div class="col">
+<h5 class="card-title">Recent Consumption</h5>
+</div>
+<div class="col-auto">
+<a href="user-consumption.html" class="btn-right btn btn-sm btn-outline-primary">
+View All
+</a>
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<div class="table-responsive">
+<table class="table table-stripped table-hover">
+<tbody>
+<tr>
+<td style="padding-right: 300px;font-size: 17px; font-weight: bolder;">AC 1.2v</td>
+<td class="text-end">20.41</td>
+</tr>
+<tr>
+    <td style="padding-right: 300px;font-size: 17px; font-weight: bolder;">TV</td>
+    <td class="text-end">20.41</td></tr>
+<tr>
+    <td style="padding-right: 300px;font-size: 17px; font-weight: bolder;">Freezer</td>
+    <td class="text-end">20.41</td>
+</tr>
+<tr>
+    <td style="padding-right: 300px;font-size: 17px; font-weight: bolder;">Microwave</td>
+    <td class="text-end">20.41</td>
+</tr>
+<tr>
+    <td style="padding-right: 300px;font-size: 17px; font-weight: bolder;">Lamps</td>
+    <td class="text-end">20.41</td>
+</tr>
+<tr>
+    <td style="padding-right: 300px;font-size: 17px; font-weight: bolder;">Bulbs</td>
+    <td class="text-end">20.41</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-6 d-flex">
+<div class="card super-admin-dash-card">
+<div class="card-header">
+<div class="row align-center">
+<div class="col">
+<h5 class="card-title">Top Consumption</h5>
+</div>
+<div class="col-auto">
+</div>
+</div>
+</div>
+<div class="card-body p-0">
+<div id="plane-chart"></div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<script src="assets/js/jquery-3.7.1.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/plugins/datatables/datatables.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/plugins/select2/js/select2.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/plugins/moment/moment.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/plugins/apexchart/apexcharts.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+<script src="assets/plugins/apexchart/chart-data.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/js/jquery-ui.min.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/js/theme-settings.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+<script src="assets/js/greedynav.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+
+<script src="assets/js/script.js" type="9b28609ccf5c6509917b8e5a-text/javascript"></script>
+<script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="9b28609ccf5c6509917b8e5a-|49" defer></script></body>
+
+</html>

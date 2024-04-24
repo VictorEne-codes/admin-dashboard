@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="light" data-sidebar-size="lg" data-sidebar-image="none">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanakku - Bootstrap Admin HTML Template</title>
+
+<link rel="shortcut icon" href="assets/img/favicon.png">
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+<link rel="stylesheet" href="assets/plugins/feather/feather.css">
+
+<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+<link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+<link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="assets/js/layout.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <div class="header header-one">
+        <a href="index.html" class="d-inline-flex d-sm-inline-flex align-items-center d-md-inline-flex d-lg-none align-items-center device-logo">
+        </a>
+        <div class="main-logo d-inline float-start d-lg-flex align-items-center d-none d-sm-none d-md-none">
+        <div class="logo-white">
+        </div>
+        <div class="logo-color">
+        <a href="index.html">
+        <img src="assets/img/logo.png" class="img-fluid logo-blue" alt="Logo">
+        </a>
+        </div>
+        </div>
+        
+        
+        
+        
+        <a class="mobile_btn" id="mobile_btn">
+        <i class="fas fa-bars"></i>
+        </a>
+        <ul class="nav nav-tabs user-menu">
+        <li class="nav-item dropdown has-arrow flag-nav">
+        <li class="nav-item dropdown  flag-nav dropdown-heads">
+        </a>
+        <li class="nav-item dropdown">
+        <a href="javascript:void(0)" class="user-link  nav-link" data-bs-toggle="dropdown">
+        <span class="user-img">
+        <i style="font-size: 30px;" class="fe fe-user"></i>
+        <!-- <span class="animate-circle"></span> -->
+        </span>
+        <span class="user-content">
+        <span class="user-details">Admin</span>
+        <span class="user-name">John Smith</span>
+        </span>
+        </a>
+        <div class="dropdown-menu menu-drop-user">
+        <div class="profilemenu">
+        <div class="subscription-menu">
+        <ul>
+        <li>
+        <a class="dropdown-item" href="settings.html">Settings</a>
+        </li>
+        </ul>
+        </div>
+        <div class="subscription-logout">
+        <ul>
+        <li class="pb-0">
+        <a class="dropdown-item" href="login.html">Log Out</a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </li>
+        
+        </ul>
+        
+        </div>
+        <!-- Side Navigation bar begins here -->
+        
+        <div class="sidebar" id="sidebar">
+        <div class="sidebar-inner slimscroll">
+        <div id="sidebar-menu" class="sidebar-menu">
+        
+        <ul class="sidebar-vertical">
+        <li>
+            <a href="index.html"><i class="fe fe-home"></i> <span> Home</span></a></li>
+        </li>
+        <li>
+            <a href="payments.html"><i class="fe fe-credit-card"></i> <span>Payments</span></a>
+        </li>
+        <li>
+            <a href="customers.html"><i class="fe fe-users"></i> <span>Customers</span></a>
+        </li>
+        <li>
+            <a href="grid.html"><i class="fe fe-user"></i> <span>Grids</span></a>
+        </li>    
+        <li>
+            <a href="recharge.html"><i class="fe fe-plus"></i> <span>Recharge</span></a>
+        </li>
+        <li>
+            <a href="top-up.html"><i class="fe fe-plus-circle"></i> <span>Top-up</span></a>
+        </li>
+        <li>
+            <a href="error.html"><i class="fe fe-x-circle"></i> <span>Error</span></a>
+        </li>
+        <li>
+            <a href="users.html"><i class="fe fe-user"></i> <span>Users</span></a>
+        </li>
+
+        
+        <li>
+        <a href="settings.html"><i class="fe fe-settings"></i> <span>Settings</span></a>
+        </li>
+        <li>
+        <a href="login.html"><i class="fe fe-power"></i> <span>Logout</span></a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        <!-- Side Navigation bar ends here -->
+        
+        
+
+<div class="page-wrapper">
+<div class="content container-fluid">
+
+<div class="page-header">
+<div class="content-page-header ">
+<h5>Users</h5>
+<div class="list-btn">
+<ul class="filter-list">
+
+</ul>
+</div>
+</div>
+</div>
+
+<a class="btn btn-primary" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#add_user"><i class="fa fa-plus-circle me-2" aria-hidden="true"></i>Add user</a>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="card-table">
+<div class="card-body">
+<div class="table-responsive">
+<table class="table table-center table-hover datatable">
+<thead class="thead-light">
+<tr>
+<th>#</th>
+<th>User Name</th>
+<th>Mobile Number</th>
+<th>Role </th>
+<th>Last Activity</th>
+<th>Created on</th>
+<th>Status</th>
+<th Class="no-sort">Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>
+<h2 class="table-avatar">Victor</h2>
+</td>
+<td>+1 989-438-3131</td>
+<td>Merchant</td>
+<td><span class="badge  bg-ash-gray text-gray-light">10 mins ago</span></td>
+<td>19 Dec 2023</td>
+<td><span class="badge  bg-success-light">Active</span></td>
+<td class="d-flex align-items-center">
+<div class="dropdown dropdown-action">
+<a href="#" class=" btn-action-icon " data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<ul>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_user"><i class="far fa-edit me-2"></i>Edit</a>
+</li>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>
+    <h2 class="table-avatar">Victor</h2>
+    </td>
+    <td>+1 989-438-3131</td>
+    <td>Merchant</td>
+    <td><span class="badge  bg-ash-gray text-gray-light">10 mins ago</span></td>
+    <td>19 Dec 2023</td>
+    <td><span class="badge  bg-success-light">Active</span></td>
+<td class="d-flex align-items-center">
+<div class="dropdown dropdown-action">
+<a href="#" class=" btn-action-icon " data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<ul>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_user"><i class="far fa-edit me-2"></i>Edit</a>
+</li>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>
+    <h2 class="table-avatar">Victor</h2>
+    </td>
+    <td>+1 989-438-3131</td>
+    <td>Merchant</td>
+    <td><span class="badge  bg-ash-gray text-gray-light">10 mins ago</span></td>
+    <td>19 Dec 2023</td>
+    <td><span class="badge  bg-warning">Online</span></td>
+<td class="d-flex align-items-center">
+<div class="dropdown dropdown-action">
+<a href="#" class=" btn-action-icon " data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<ul>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_user"><i class="far fa-edit me-2"></i>Edit</a>
+</li>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>
+    <h2 class="table-avatar">Victor</h2>
+    </td>
+    <td>+1 989-438-3131</td>
+    <td>Merchant</td>
+    <td><span class="badge  bg-ash-gray text-gray-light">10 mins ago</span></td>
+    <td>19 Dec 2023</td>
+    <td><span class="badge  bg-success-light">Active</span></td>
+<td class="d-flex align-items-center">
+<div class="dropdown dropdown-action">
+<a href="#" class=" btn-action-icon " data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<ul>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_user"><i class="far fa-edit me-2"></i>Edit</a>
+</li>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>
+    <h2 class="table-avatar">Victor</h2>
+    </td>
+    <td>+1 989-438-3131</td>
+    <td>Merchant</td>
+    <td><span class="badge  bg-ash-gray text-gray-light">10 mins ago</span></td>
+    <td>19 Dec 2023</td>
+    <td><span class="badge  bg-warning">Online</span></td>
+<td class="d-flex align-items-center">
+<div class="dropdown dropdown-action">
+<a href="#" class=" btn-action-icon " data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<ul>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_user"><i class="far fa-edit me-2"></i>Edit</a>
+</li>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>
+    <h2 class="table-avatar">Victor</h2>
+    </td>
+    <td>+1 989-438-3131</td>
+    <td>Merchant</td>
+    <td><span class="badge  bg-ash-gray text-gray-light">10 mins ago</span></td>
+    <td>19 Dec 2023</td>
+    <td><span class="badge  bg-danger text-gray-light">Restricted</span></td>
+<td class="d-flex align-items-center">
+<div class="dropdown dropdown-action">
+<a href="#" class=" btn-action-icon " data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></a>
+<div class="dropdown-menu dropdown-menu-right">
+<ul>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#edit_user"><i class="far fa-edit me-2"></i>Edit</a>
+</li>
+<li>
+<a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#delete_modal"><i class="far fa-trash-alt me-2"></i>Delete</a>
+</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="modal custom-modal modal-lg fade" id="add_user" role="dialog">
+<div class="modal-dialog modal-dialog-centered modal-md">
+<div class="modal-content">
+<div class="modal-header border-0 pb-0">
+<div class="form-header modal-header-title text-start mb-0">
+<h4 class="mb-0">Add User</h4>
+</div>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+</button>
+</div>
+<form action="#">
+<div class="modal-body">
+<div class="row">
+<div class="col-md-12">
+<div class="card-body">
+<div class="form-groups-item">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>First Name</label>
+<input type="text" class="form-control" placeholder="Enter First Name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>Last Name</label>
+<input type="text" class="form-control" placeholder="Enter Last Name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>User Name</label>
+<input type="text" class="form-control" placeholder="Enter User Name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter Email Address">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>Phone Number</label>
+<input type="text" class="form-control" placeholder="Enter Phone Number" name="name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>Role</label>
+<input type="text" class="form-control" placeholder="Enter Role" name="name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="pass-group" id="3">
+<div class="input-block">
+<label>Password</label>
+<input type="password" class="form-control pass-input" placeholder>
+<span class="toggle-password feather-eye"></span>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="pass-group" id="passwordInput2">
+<div class="input-block">
+<label>Confirm Password</label>
+<input type="password" class="form-control pass-input" placeholder>
+<span class="toggle-password feather-eye"></span>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" data-bs-dismiss="modal" class="btn btn-back cancel-btn me-2">Cancel</button>
+<button type="submit" data-bs-dismiss="modal" class="btn btn-primary paid-continue-btn">Add User</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+<div class="modal custom-modal modal-lg fade" id="edit_user" role="dialog">
+<div class="modal-dialog modal-dialog-centered modal-md">
+<div class="modal-content">
+<div class="modal-header border-0 pb-0">
+<div class="form-header modal-header-title text-start mb-0">
+<h4 class="mb-0">Edit User</h4>
+</div>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+</button>
+</div>
+<form action="#">
+<div class="modal-body">
+<div class="row">
+<div class="col-md-12">
+<div class="card-body">
+<div class="form-groups-item">
+<div class="row">
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>First Name</label>
+<input type="text" value="John" class="form-control" placeholder="Enter First Name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>Last Name</label>
+<input type="text" class="form-control" value="Smith" placeholder="Enter Last Name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>User Name</label>
+<input type="text" class="form-control" value="John Smith" placeholder="Enter User Name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>Email</label>
+<input type="email" class="form-control" value="john@example.com" placeholder="Enter Email Address">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>Phone Number</label>
+<input type="text" class="form-control" value="+1 989-438-3131" placeholder="Enter Phone Number" name="name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block mb-3">
+<label>Role</label>
+<input type="text" class="form-control" value="+1 989-438-3131" placeholder="Enter Role" name="name">
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="pass-group" id="passwordInput1">
+<div class="input-block">
+<label>Password</label>
+<input type="password" class="form-control pass-input" value="12345678" placeholder>
+<span class="toggle-password feather-eye"></span>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="pass-group" id="passwordInput4">
+<div class="input-block">
+<label>Confirm Password</label>
+<input type="password" class="form-control pass-input" value="12345678" placeholder>
+<span class="toggle-password feather-eye"></span>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-sm-12">
+<div class="input-block ">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" data-bs-dismiss="modal" class="btn btn-primary paid-cancel-btn me-2">Cancel</button>
+<button type="submit" data-bs-dismiss="modal" class="btn btn-primary paid-continue-btn">Update</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+
+
+<div class="modal custom-modal fade" id="delete_modal" role="dialog">
+<div class="modal-dialog modal-dialog-centered modal-md">
+<div class="modal-content">
+<div class="modal-body">
+<div class="form-header">
+<h3>Delete Users</h3>
+<p>Are you sure want to delete?</p>
+</div>
+<div class="modal-btn delete-action">
+<div class="row">
+<div class="col-6">
+<a href="#" class="btn btn-primary paid-continue-btn">Delete</a>
+</div>
+<div class="col-6">
+<a href="#" data-bs-dismiss="modal" class="btn btn-primary paid-cancel-btn">Cancel</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.7.1.min.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+
+<script src="assets/plugins/datatables/datatables.min.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+
+<script src="assets/plugins/select2/js/select2.min.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+
+<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+
+<script src="assets/plugins/moment/moment.min.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+
+<script src="assets/js/jquery-ui.min.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+
+<script src="assets/js/theme-settings.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+<script src="assets/js/greedynav.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+
+<script src="assets/js/script.js" type="84ffea08d04501d131bb00b8-text/javascript"></script>
+<script src="../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="84ffea08d04501d131bb00b8-|49" defer></script></body>
+
+</html>
